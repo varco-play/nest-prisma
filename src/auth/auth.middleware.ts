@@ -1,5 +1,4 @@
 import { Injectable, NestMiddleware, UnauthorizedException } from '@nestjs/common';
-import { JwtModule } from '@nestjs/jwt';
 import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
