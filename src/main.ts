@@ -6,7 +6,7 @@ import { AuthMiddleware } from './auth/auth.middleware';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(cookieParser());
-  app.use(new AuthMiddleware().use);
+  app.use(AuthMiddleware)
   await app.listen(4545);
 }
 bootstrap();
